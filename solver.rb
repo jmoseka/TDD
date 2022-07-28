@@ -1,6 +1,4 @@
 class Solver
-  puts 'Hello World'
-
   def factorial(num)
     case num
     when 0

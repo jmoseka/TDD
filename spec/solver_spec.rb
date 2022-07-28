@@ -15,5 +15,10 @@ describe 'Write unit tests for class Solver' do
       result = @solver.factorial(6)
       expect(result).to eql 720
     end
+
+    it 'should raise an exception when N is a negative integer' do
+      result = @solver.factorial(-2)
+      expect(result).to match('No negative integer. This is an exception.')
+    end
   end
 end
